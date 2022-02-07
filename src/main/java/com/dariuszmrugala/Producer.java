@@ -17,11 +17,12 @@ public class Producer extends Thread{
             try {
                 System.out.println(getName() + " produced " + i);
                 sharedQueue.put(i);
-                Thread.sleep(200);
+                Thread.sleep(1000);
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
         }
+        System.out.println("Producer stop working");
     }
 
 }
