@@ -13,6 +13,10 @@ public class ProducerConsumerSolution {
         Producer producer3 = new Producer(sharedQueue);
         MyConsumer myConsumer = new MyConsumer(sharedQueue);
 
+        //github synchro test
+        //check in in the linux
+        //check out in the windows
+
         producer1.start();
         producer2.start();
         producer3.start();
